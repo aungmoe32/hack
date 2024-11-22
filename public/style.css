@@ -1,0 +1,151 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Chatbot Button */
+#chatbot-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #10B981;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90px;
+    height: 90px;
+}
+
+#chatbot-button:hover {
+    background-color: #0056b3;
+}
+
+/* Chatbot Window */
+.chatbot-window {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 300px;
+    height: 400px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    animation: slideUp 0.3s ease-in-out;
+}
+
+/* Animation for sliding the chatbot window */
+@keyframes slideUp {
+    from {
+        bottom: -400px;
+    }
+    to {
+        bottom: 80px;
+    }
+}
+
+/* Chatbox styling */
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+#chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#user-input {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+btn:hover {
+    background-color: #0056b3;
+}
+
+/* Chat bubbles */
+.user-message, .bot-message {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.user-message {
+    text-align: right;
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: auto;
+    word-wrap: break-word;
+}
+
+.bot-message {
+    text-align: left;
+    background-color: #f1f1f1;
+    color: white;
+    margin-right: auto;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: auto;
+    word-wrap: break-word;
+}
+
+/* Adjust chat bubbles size according to content */
+.user-message, .bot-message {
+    width: auto;
+    max-width: 75%; /* Max width of the bubble */
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+}
+
+.bot-message {
+    background-color: #67b5df;
+    color: #fff;
+    margin-right: auto;
+}
+
+/* Make sure the chat box scrolls automatically */
+#chat-box {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-bottom: 10px;
+}
