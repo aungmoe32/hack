@@ -4,6 +4,8 @@
 
 Sweepers is a waste management web app designed to encourage eco-friendly practices by integrating AI-powered hardware with a user-friendly platform. It features a smart bin equipped with a camera sensor that identifies waste types and weights, generating coupons redeemable for reward points. These points can be exchanged for cash, promoting sustainable waste disposal. The app also includes educational waste articles, a chatbot for assistance, and responsive design, making it accessible across devices.
 
+This is the project that competed in the Hackathon at the 100th Anniversary Engineering Festival at NSPU.
+
 ## Demo
 
 - App url : https://hack-ivory.vercel.app/
@@ -40,8 +42,9 @@ Sweepers is a waste management web app designed to encourage eco-friendly practi
 
 1.  Clone the repository:
 
-    `git clone https://github.com/aungmoe32/sweepers.git
-cd sweepers`
+        `git clone https://github.com/aungmoe32/sweepers.git
+
+    cd sweepers`
 
 2.  Install dependencies:
 
