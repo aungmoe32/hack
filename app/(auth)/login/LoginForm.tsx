@@ -21,7 +21,7 @@ import { Label } from "@/components/ui/label";
 import { loginSchema } from "@/lib/schemas/formSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { signIn, signOut, useSession } from "next-auth/react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
@@ -40,8 +40,6 @@ export default function LoginForm() {
   } = form;
   const [disabledSubmit, setDisabledSubmit] = useState(false);
 
-  const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get("callbackUrl");
   const router = useRouter();
   const { authenticated, setAuthenticated, setUser } =
     useContext(FakeAuthContext);
